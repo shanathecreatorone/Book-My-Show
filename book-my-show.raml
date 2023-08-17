@@ -5,7 +5,13 @@ types:
   Tickets: !include /data-types/tickets.raml
   Snacks: !include /data-types/snacks.raml
 
-
+/movies:
+  get:
+    description: Displays movies that are able to be booked 
+    queryParameters:
+      Movie Name:
+        displayName: Movie Name
+        
 /tickets: 
   get:
     description: Gets all tickets based on the given query parameters

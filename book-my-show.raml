@@ -2,12 +2,12 @@
 title: Book My Show
 
 types:
-  Tickets: !include /data-types/tickets.raml
-  Snacks: !include /data-types/snacks.raml
+  Tickets: 
+  Snacks: 
 
 /movies:
   get:
-    description: Displays movies that are able to be booked 
+    description: Displays movies that are currently in theatres
     queryParameters:
       Movie Name:
         displayName: Movie Name
@@ -46,7 +46,7 @@ types:
         body:
           application/json:
             type: Tickets[]
-            example: !include /examples/ticketsexample.raml
+            example: 
       400:
         body:
           application/json:
@@ -59,7 +59,7 @@ types:
     body:
       application/json:
         type: Tickets[]
-        example: !include /examples/newtickets.raml
+        example:
     responses:
       201:
         body:

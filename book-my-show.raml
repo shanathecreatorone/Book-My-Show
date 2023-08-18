@@ -1,9 +1,11 @@
 #%RAML 1.0
 title: Book My Show
 
+
 types:
   Movies: !include /data-types/MovieDataType.raml
   Tickets: !include /data-types/TicketDataType.raml
+
 
 /movies:
   get:
@@ -33,7 +35,7 @@ types:
                 example:
                 message: 
 
-      post:
+  post:
         displayName: Add new snack
         description: Create a new snack
         body:
@@ -52,7 +54,7 @@ types:
                 example:
                   message:
 
-      put:
+  put:
         description: Update a snack
         body:
           application/json:
@@ -66,7 +68,7 @@ types:
                 example:
                   message: Snack updated!
               
-      delete:
+  delete:
         description: Delete a snack
         responses:
           200:
@@ -159,7 +161,7 @@ types:
                 example:
                   message: Ticket deleted!
                   
-      /{ticket_id}:
+    /{ticket_id}:
         get:
           description: Find tickets by ID
           responses:
@@ -169,4 +171,3 @@ types:
                   type: 
                   examples:
                     output: 
-                                                              

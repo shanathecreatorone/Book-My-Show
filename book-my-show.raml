@@ -40,14 +40,14 @@ types:
         description: Create a new snack
         body:
           application/json:
-            type: Snacks[]
+            type: Movies[]
             example: 
         responses:
           201:
             body:
               application/json:
                 example:
-                  message: New snack created!
+                  message: New movie created!
           400:
             body:
               application/json:
@@ -55,7 +55,7 @@ types:
                   message:
 
   put:
-        description: Update a snack
+        description: Update a movie
         body:
           application/json:
             type: 
@@ -66,16 +66,16 @@ types:
             body:
               application/json:
                 example:
-                  message: Snack updated!
+                  message: Movie updated!
               
   delete:
-        description: Delete a snack
+        description: Delete a Movie
         responses:
           200:
             body:
               application/json:
                 example:
-                  message: ticket deleted!
+                  message: Movie deleted!
         
 /tickets: 
   get:

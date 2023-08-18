@@ -41,13 +41,12 @@ types:
         description: Create a new movie
         body:
           application/json:
-            type: Movies[]
-            example: 
+            type: Movies
         responses:
           201:
             body:
               application/json:
-                example:
+                example: !include 
                   message: New movie created!
           400:
             body:
@@ -136,7 +135,6 @@ types:
         body:
           application/json:
             type: Tickets
-            example:
         responses:
           201:
             body:

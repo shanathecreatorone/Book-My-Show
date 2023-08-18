@@ -17,17 +17,18 @@ types:
      Movie Title:
       required: false
       type: string
-     Movie Name:
+     Movie Description:
       required: false
       type: string
-     Movie Price:
+     Movie Showtimes:
       required: false
       type: string
-        responses:
-          200:
-            body:
-              application/json:
-                type: Movies[]
+        
+    responses:
+      200:
+        body:
+          application/json:
+            type: Movies[]
                 example: !include 
           400:
             body:

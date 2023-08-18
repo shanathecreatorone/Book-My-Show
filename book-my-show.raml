@@ -67,6 +67,15 @@ types:
               application/json:
                 example: 
                   message: Movie updated!
+              
+  delete:
+        description: Delete a Movie
+        responses:
+          200:
+            body:
+              application/json:
+                example:
+                  message: Movie deleted!
 
   /{movie_id}:
         get:
@@ -78,15 +87,6 @@ types:
                   type: 
                   examples:
                     output: 
-              
-  delete:
-        description: Delete a Movie
-        responses:
-          200:
-            body:
-              application/json:
-                example:
-                  message: Movie deleted!
         
 /tickets: 
   get:
@@ -175,13 +175,4 @@ types:
 /{ticket_id}:
   get:
     description: Find tickets by ID
-    Movie ID:
-     required: true
-     type: integer
-          responses:
-            200: 
-              body:
-                application/json:
-                  type: 
-                    examples:
-                      output: 
+    

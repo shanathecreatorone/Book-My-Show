@@ -173,12 +173,16 @@ types:
                   message: Ticket deleted!
                   
 /{ticket_id}:
-        get:
-          description: Find tickets by ID
-          responses:
-            200:
-              body:
-                application/json:
-                  type: 
-                  examples:
-                    output: 
+  get:
+    description: Find tickets by ID
+    Movie ID:
+      required: true
+      type: integer
+     Movie Title:
+     responses:
+      200: 
+        body:
+          application/json:
+            type: 
+              examples:
+                output: 

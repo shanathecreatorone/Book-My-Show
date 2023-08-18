@@ -48,7 +48,7 @@ types:
               application/json:
                 type: Movies
                 example: !include /examples/AddMovieExample.raml
-                message: 
+                  message: 
           400:
             body:
               application/json:
@@ -116,7 +116,7 @@ types:
             displayName: Ticket Booked
             description: Shows whether ticket has been booked
             required: false
-            type: string
+            type: boolean
       responses:
           200:
             body:

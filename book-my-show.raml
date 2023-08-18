@@ -79,34 +79,34 @@ types:
         
 /tickets: 
   get:
-    description: Gets all tickets based on the given query parameters
-    queryParameters:
-      Ticket ID: 
-            displayName: Ticket ID
-            description: Ticket ID number 
-            required: true
-            type: integer
-          Ticket Type:
+      description: Gets all tickets based on the given query parameters
+      queryParameters:
+        Ticket ID: 
+          displayName: Ticket ID
+          description: Ticket ID number 
+          required: true
+          type: integer
+        Ticket Type:
             displayName: Ticket Type
             description: Shows whether it Balcony or First Class ticket
             required: false
             type: string
-          Ticket Price:
+        Ticket Price:
             displayName: Ticket Price
             description: Displays the price of the ticket in rupees
             required: false
             type: string
-          Ticket Number:
+        Ticket Number:
             displayName: Ticket Number
             description: Shows the row and seat number of the ticket
             required: false
             type: string
-          Ticket Booked:
+        Ticket Booked:
             displayName: Ticket Booked
             description: Shows whether ticket has been booked
             required: false
             type: string
-        responses:
+      responses:
           200:
             body:
               application/json:
@@ -118,7 +118,7 @@ types:
                 example:
                   message: Error retrieving Ticket data!
                   
-      post:
+  post:
         displayName: Add new ticket
         description: Create a new ticket
         body:

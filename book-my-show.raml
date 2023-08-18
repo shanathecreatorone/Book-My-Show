@@ -32,12 +32,12 @@ types:
             example: !include /examples/MovieExample.raml
       400:
        body:
-          application/json:
-            example:
-              message: 
+        application/json:
+          example:
+            message: MOVIE NOT FOUND!
 
   post:
-        displayName: Add new snack
+        displayName: Add new movie
         description: Create a new snack
         body:
           application/json:

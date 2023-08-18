@@ -15,7 +15,85 @@ types:
     get:
       description: Identifies Movie by ID
       displayName: Movie ID
-      
+/mo:
+      get:
+        description: Gets all snacks based on the given query parameters
+        queryParameters:
+          Snack ID:
+            displayName: Snack ID
+            description: Snack ID number 
+            required: true
+            type: integer
+          Snack Type:
+            displayName: Snack Type
+            description: Shows whether snack is veg or non-veg
+            required: false
+            type: string
+          Snack Name:
+            displayName: Snack Name
+            description: Displays the name of the snack
+            required: false
+            type: string
+          Snack Price:
+            displayName: Snack Price
+            description: Shows the price of the snack in rupees
+            required: false
+            type: string
+        responses:
+          200:
+            body:
+              application/json:
+                type: Snacks[]
+                example: 
+          400:
+            body:
+              application/json:
+                example:
+                  message: Error retrieving snack data!
+
+      post:
+        displayName: Add new snack
+        description: Create a new snack
+        body:
+          application/json:
+            type: Snacks[]
+            example: 
+        responses:
+          201:
+            body:
+              application/json:
+                example:
+                  message: New snack created!
+          400:
+            body:
+              application/json:
+                example:
+                  message: Error creating new snack.
+
+      put:
+        description: Update a snack
+        body:
+          application/json:
+            type: 
+            example: 
+              input:!include 
+        responses:
+          200:
+            body:
+              application/json:
+                example:
+                  message: Snack updated!
+              
+      delete:
+        description: Delete a snack
+        responses:
+          200:
+            body:
+              application/json:
+                example:
+                  message: Snack deleted!
+
+         
       
 
         
@@ -113,83 +191,4 @@ types:
                   type: 
                   examples:
                     output: 
-                                                                            
-    /snacks:
-      get:
-        description: Gets all snacks based on the given query parameters
-        queryParameters:
-          Snack ID:
-            displayName: Snack ID
-            description: Snack ID number 
-            required: true
-            type: integer
-          Snack Type:
-            displayName: Snack Type
-            description: Shows whether snack is veg or non-veg
-            required: false
-            type: string
-          Snack Name:
-            displayName: Snack Name
-            description: Displays the name of the snack
-            required: false
-            type: string
-          Snack Price:
-            displayName: Snack Price
-            description: Shows the price of the snack in rupees
-            required: false
-            type: string
-        responses:
-          200:
-            body:
-              application/json:
-                type: Snacks[]
-                example: 
-          400:
-            body:
-              application/json:
-                example:
-                  message: Error retrieving snack data!
-
-      post:
-        displayName: Add new snack
-        description: Create a new snack
-        body:
-          application/json:
-            type: Snacks[]
-            example: 
-        responses:
-          201:
-            body:
-              application/json:
-                example:
-                  message: New snack created!
-          400:
-            body:
-              application/json:
-                example:
-                  message: Error creating new snack.
-
-      put:
-        description: Update a snack
-        body:
-          application/json:
-            type: 
-            example: 
-              input:!include 
-        responses:
-          200:
-            body:
-              application/json:
-                example:
-                  message: Snack updated!
-              
-      delete:
-        description: Delete a snack
-        responses:
-          200:
-            body:
-              application/json:
-                example:
-                  message: Snack deleted!
-
-     
+                                                              

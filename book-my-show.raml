@@ -2,8 +2,8 @@
 title: Book My Show
 
 types:
+  Movies:
   Tickets: 
-  Snacks: 
 
 /movies:
   get:
@@ -192,13 +192,4 @@ types:
                 example:
                   message: Snack deleted!
 
-      /{snack_id}:
-          description: Find snacks by ID
-          get:
-            responses:
-              200:
-                body:
-                  application/json:
-                    type: 
-                    examples:
-                      output:
+     

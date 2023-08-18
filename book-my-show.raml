@@ -29,12 +29,12 @@ types:
         body:
           application/json:
             type: Movies[]
-                example: !include 
-          400:
-            body:
-              application/json:
-                example:
-                message: 
+              example: !include /examples/MovieExample.raml
+      400:
+       body:
+          application/json:
+            example:
+              message: 
 
   post:
         displayName: Add new snack

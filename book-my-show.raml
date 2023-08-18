@@ -60,11 +60,12 @@ types:
           application/json:
             type: 
             example: 
-              input: !include /examples/TicketExample.raml
+              input: 
         responses:
           200:
             body:
               application/json:
+                example: !include /examples/TicketExample.raml
                   message: Movie updated!
 
   /{movie_id}:

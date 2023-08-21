@@ -148,7 +148,7 @@ types:
         description: Update a ticket
         body:
           application/json:
-            type: 
+            type: Tickets
             example: !include /examples/TicketExample.raml
         responses:
           200:
@@ -159,6 +159,7 @@ types:
           400:
             body:
               application/json:
+                type: Tickets
                 example:
                   message: TICKET NOT UPDATED!
 
@@ -168,10 +169,12 @@ types:
           200:   
             body:
               application/json:
+                type: Tickets
                 example:
                   message: Ticket deleted!
           400:
             body:
               application/json:
+                type: Tickets
                 example:
                   message: TICKET NOT DELETED!

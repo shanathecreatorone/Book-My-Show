@@ -65,6 +65,12 @@ types:
               application/json:
                 example: 
                   message: Movie updated!
+
+          400:
+            body:
+              application/json:
+                example:
+                  message: MOVIE NOT UPDATED!
               
   delete:
         description: Delete a Movie
@@ -74,6 +80,11 @@ types:
               application/json:
                 example:
                   message: Movie deleted!
+          400:
+            body:
+              application/json:
+                example:
+                  message: MOVIE NOT DELETED!
         
 /tickets: 
   get:

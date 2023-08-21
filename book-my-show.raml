@@ -158,6 +158,11 @@ types:
               application/json:
                 example:
                   message: Ticket Updated!
+          400:
+            body:
+              application/json:
+                example:
+                  message: TICKET NOT UPDATED!
 
   delete:
         description: Delete a ticket
@@ -167,3 +172,8 @@ types:
               application/json:
                 example:
                   message: Ticket deleted!
+          400:
+            body:
+              application/json:
+                example:
+                  message: TICKET NOT DELETED!

@@ -69,6 +69,7 @@ types:
           400:
             body:
               application/json:
+                type: Movies
                 example:
                   message: MOVIE NOT UPDATED!
               
@@ -78,11 +79,13 @@ types:
           200:
             body:
               application/json:
+                type: Movies
                 example:
                   message: Movie deleted!
           400:
             body:
               application/json:
+                type: Movies
                 example:
                   message: MOVIE NOT DELETED!
         
@@ -124,6 +127,7 @@ types:
           400:
             body:
               application/json:
+                type: Tickets
                 example:
                   message: Error retrieving Ticket data!
                   

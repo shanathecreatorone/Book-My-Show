@@ -45,7 +45,7 @@ types:
             application/json:
               type: Movies
               examples:
-                output: !include /examples/SingleMovieExample.raml
+                output: !include /examples/singleMovieExample.raml
       
   post:
         description: Create a new movie
@@ -156,7 +156,7 @@ types:
               type: Tickets
               examples:
                 output:
-                  
+
 
 
   post:
@@ -169,7 +169,7 @@ types:
             body:
               application/json:
                 type: Tickets
-                example: !include /examples/AddTicketExample.raml
+                example: !include /examples/NOIDTicketExample.raml
           400:
             body:
               application/json:

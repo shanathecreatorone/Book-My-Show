@@ -73,7 +73,7 @@ types:
         body:
           application/json:
             type: Movies
-            example: !include /examples/AddMovieExample.raml
+            example: !include 
         responses:
           200:
             body:
@@ -187,6 +187,7 @@ types:
           200:
             body:
               application/json:
+                type: Tickets
                 example:
                   message: Ticket Updated!
           400:

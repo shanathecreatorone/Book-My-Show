@@ -182,12 +182,11 @@ types:
         body:
           application/json:
             type: Tickets
-            examples: !include /examples/NOIDTicketExample.raml
+            example: !include /examples/NOIDTicketExample.raml
         responses:
           200:
             body:
               application/json:
-                type: Tickets
                 example:
                   message: Ticket Updated!
           400:

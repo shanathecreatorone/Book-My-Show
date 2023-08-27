@@ -90,7 +90,7 @@ types:
                   message: MOVIE NOT UPDATED!
               
   delete:
-        description: Delete a Movie
+        description: Delete a movie
         responses:
           200:
             body:
@@ -106,8 +106,8 @@ types:
                   message: MOVIE NOT DELETED!
         
 /tickets: 
+  description: Gets all tickets based on the given query parameters
   get:
-      description: Gets all tickets based on the given query parameters
       queryParameters:
         Ticket ID: 
           displayName: Ticket ID
@@ -148,7 +148,7 @@ types:
                   message: Error retrieving Ticket data!
                   
   /{ID}:
-    description: Find tickert
+    description: Find ticket by ID
     get:
       responses:
         200:

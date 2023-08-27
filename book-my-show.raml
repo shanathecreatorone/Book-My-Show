@@ -7,8 +7,8 @@ types:
   Tickets: !include /data-types/TicketDataType.raml
 
 /movies:
+  description: Displays current movie selection
   get:
-    description: Displays movies that are currently in theatres
     queryParameters:
      Movie ID:
       required: false
@@ -38,6 +38,7 @@ types:
             message: MOVIE NOT FOUND!
 
   /{ID}:
+    description: Displays current movie selection= by ID
     get:
       responses:
         200:

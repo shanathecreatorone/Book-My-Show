@@ -73,7 +73,7 @@ types:
         body:
           application/json:
             type: Movies
-            example: !include 
+            example: !include /examples/NOIDMovieExample.raml
         responses:
           200:
             body:
@@ -155,7 +155,7 @@ types:
             application/json:
               type: Tickets
               examples:
-                output:
+                output: !include /examples/singleTicketExample.raml
 
 
 

@@ -38,7 +38,7 @@ types:
             message: MOVIE NOT FOUND!
 
   /{ID}:
-    description: Displays current movie selection= by ID
+    description: Displays current movie selection by ID
     get:
       responses:
         200:
@@ -158,8 +158,6 @@ types:
               type: Tickets
               examples:
                 output: !include /examples/singleTicketExample.raml
-
-
 
   post:
         description: Create a new ticket

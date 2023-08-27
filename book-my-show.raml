@@ -11,7 +11,7 @@ types:
     description: Displays movies that are currently in theatres
     queryParameters:
      Movie ID:
-      required: true
+      required: false
       type: integer
      Movie Title:
       required: false
@@ -39,6 +39,11 @@ types:
 
   /{ID}:
     get:
+      responses:
+        200:
+          body:
+            application/json:
+              type: 
       
 
 

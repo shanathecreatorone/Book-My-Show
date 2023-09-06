@@ -164,6 +164,32 @@ types:
   /{Ticket_ID}:
     description: Find ticket by ID
     get:
+      queryParameters:
+        Ticket ID: 
+          displayName: Ticket ID
+          description: Ticket ID number 
+          required: false
+          type: integer
+        Ticket Type:
+            displayName: Ticket Type
+            description: Shows whether it Balcony or First Class ticket
+            required: false
+            type: string
+        Ticket Price:
+            displayName: Ticket Price
+            description: Displays the price of the ticket in rupees
+            required: false
+            type: string
+        Ticket Number:
+            displayName: Ticket Number
+            description: Shows the row and seat number of the ticket
+            required: false
+            type: string
+        Ticket Booked:
+            displayName: Ticket Booked
+            description: Shows whether ticket has been booked
+            required: false
+            type: boolean
       responses:
         200:
           body:
